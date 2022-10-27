@@ -2,7 +2,9 @@
 // Mssv : 20200568
 // Ví dụ 2
 // the first dialog Java program
+
 import javax.swing.JOptionPane;
+
 public class FirstDialog{
 	
 	public static void main(String[] args) {
