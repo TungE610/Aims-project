@@ -6,7 +6,7 @@
 
 import java.util.Scanner;
 
-public class NumberOfDays {
+public class NumberOfDay {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in); // Tạo đối tượng của lớp Scanner có tên keyboard.
 
