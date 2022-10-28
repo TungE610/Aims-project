@@ -11,10 +11,10 @@ public class NumberOfDay {
         Scanner keyboard = new Scanner(System.in); // Tạo đối tượng của lớp Scanner có tên keyboard.
 
         // Khởi tạo xâu để lưu trữ giá trị và nhập vào
-        System.out.print("Enter the month: "); // In ra thông báo nhập tháng
+        System.out.print("Nhập vào tháng muốn tìm: "); // In ra thông báo nhập tháng
         String strMonth = keyboard.nextLine(); // Khởi tạo biến strMonth để lưu trữ giá trị tháng được nhập vào
         
-        System.out.print("Enter the year: "); // In ra thông báo nhập năm
+        System.out.print("Nhập năm muốn tìm: "); // In ra thông báo nhập năm
         int year = keyboard.nextInt(); // Khởi tạo biến year lưu giá trị năm nhập từ bàn phím
         
         int month = 0; // Khởi tạo biến month để nhận giá trị biến sau khi kiểm tra

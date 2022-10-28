@@ -11,10 +11,9 @@ public class DrawStar {
         Scanner keyboard = new Scanner(System.in); // Tạo đối tượng của lớp Scanner có tên keyboard.
 
         // Nhập giá trị chiều cao cho tam giác sao
-        System.out.println("Input chiều cao n: "); // Hiện thị yêu cầu nhập chiều cao
+        System.out.println("Nhập vào chiều cao n: "); // Hiện thị yêu cầu nhập chiều cao
         int n = keyboard.nextInt(); // Biến chiều cao n được nhập từ bàn phím
 
-        // Quy ước gồm 5 dòng từ dòng 0 đến dòng 4
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n - i - 1; j++) {
                 System.out.print(" "); // Tạo khoảng trắng cho đầu mỗi dòng từ ô 0->n-i-1 ở dòng thứ i
