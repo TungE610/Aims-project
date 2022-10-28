@@ -120,15 +120,15 @@ public class Ex_2_2_6 {
 		// Tính định thức delta 
 		double delta = b*b - 4 * a * c;
 		
-        if (delta < 0) {
+        if (delta < 0) { // Xét trường hợp định thức delta < 0 thì phương trình vô nghiệm
 			JOptionPane.showMessageDialog(null,
                     "Phương trình trên vô nghiệm !!", // In ra thông báo vô nghiệm
                     "title", JOptionPane.INFORMATION_MESSAGE);
-        } else if (delta == 0) {
+        } else if (delta == 0) { // Xét trường hợp định thức delta = 0 thì phương trình có nghiệm kép
 			JOptionPane.showMessageDialog(null,
-                    "Phương trình trên có nghiệm kép là : x1 = x2 = " + (-b/(2*a)), // In ra thông báo vô nghiệm
+                    "Phương trình trên có nghiệm kép là : x1 = x2 = " + (-b/(2*a)), // In ra thông báo có nghiệm kép
                     "title", JOptionPane.INFORMATION_MESSAGE);
-        } else {
+        } else { // Xét trường hợp định thức delta > 0 thì phương trình có 2 nghiệm phân biệt
 			JOptionPane.showMessageDialog(null,
                     "Phương trình trên có 2 nghiệm phân biệt là : x1 = " + ((-b + Math.sqrt(a))/(2*a)) + "  và x2 = " + ((-b - Math.sqrt(a))/(2*a)), // In ra thông báo vô nghiệm
                     "title", JOptionPane.INFORMATION_MESSAGE);
