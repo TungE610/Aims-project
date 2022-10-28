@@ -8,6 +8,7 @@ import javax.swing.JOptionPane;
 
 //Nhap vao 2 so va hien ra hai so vua nhap
 public class ShowTwoNumbers {
+	
 	public static void main(String[] args) {
 		String strNum1;	//Khai báo xâu để lưu số thứ nhất
 		String strNum2;	//Khai báo xâu để lưu số thứ hai 
