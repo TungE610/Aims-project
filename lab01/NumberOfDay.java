@@ -99,7 +99,7 @@ public class NumberOfDay {
         switch (month) {
             case 1: // Tháng 1 có 31 ngày
                 System.out.println(
-                        "January " + year + " had 31 days");
+                	   "January " + year + " had 31 days");
                 break;
             case 2: // Tháng 2 có 29 ngày nếu là năm nhuận và 28 ngày với năm thường
                 System.out.println("February " + year + " had" +
