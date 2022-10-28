@@ -8,11 +8,11 @@
 // Chương trình giải phương trình bậc nhất 1 ẩn, hệ phương trình bậc nhất 2 ẩn, và phương trình bậc 2 1 ẩn
 
 import javax.swing.JOptionPane;
-
+import java.lang.Math;
 // 2.2.6
 
 public class Ex_2_2_6 {
-	
+	// Chương trình giải phương trình bậc nhất 1 ẩn
 	public static void solveFirstDegreeEquation(String[] args) {
 		String strA; // Khai báo chuỗi để lưu hệ số bậc 1
 		String strB; // Khai báo chuỗi để lưu hệ số bậc 0
@@ -36,8 +36,8 @@ public class Ex_2_2_6 {
 			JOptionPane.showMessageDialog(null, -b / a,"Root of above equation :", JOptionPane.INFORMATION_MESSAGE);
 		}
 	}
-	
-	public static void main(String[] args) {
+	// Chương trình giải hệ phương trình bậc nhất 2 ẩn
+	public static void solveSystemFirstDegEquations(String[] args) {
 		
 		// Khai báo các chuỗi để lưu trữ các hệ số của hệ phương trình
 		String strA11;
@@ -69,7 +69,7 @@ public class Ex_2_2_6 {
 		// Chuyển các hệ số về dạng số thực
 		double A11 = Double.parseDouble(strA11);
 		double A12 = Double.parseDouble(strA12);
-		double B1 = Double.parseDouble(strA12);
+		double B1 = Double.parseDouble(strB1);
 		double A21 = Double.parseDouble(strA21);
 		double A22 = Double.parseDouble(strA22);
 		double B2 = Double.parseDouble(strB2);
@@ -78,19 +78,60 @@ public class Ex_2_2_6 {
 		double D1 = B1*A22 - A12*B2;
 		double D2 = A11*B2 - B1*A21;
 		
-		if (D != 0) {
-			JOptionPane.showMessageDialog(null,"Root : " + D1/D + D2/D, expression , JOptionPane.INFORMATION_MESSAGE);
+		if (D != 0) { // Xét trường hợp định thức D khác 0 thì hệ phương trình có 1 nghiệm duy nhất 
+			JOptionPane.showMessageDialog(null,	// In ra nghiệm của hệ phương trình
+                    "Hệ phương trình có 2 nghiệm là: x1 = " + D1/D + " và x2 = " + D2/D ,
+                    "title", JOptionPane.INFORMATION_MESSAGE);		
+			}
+		else { // Xét trường hợp D = 0 thì có hai trường hợp : hpt vô nghiệm hoặc vô số nghiệm
+			if (D1 != 0 || D2 != 0) { // Xét trường hợp có ít nhất 1 trong 2 định thức D1, D2 khác 0 thì hệ phương trình vô nghiệm
+				JOptionPane.showMessageDialog(null,
+	                    "Hệ phương trình vô nghiệm !!",	// In ra thông báo vô nghiệm
+	                    "title", JOptionPane.INFORMATION_MESSAGE);	
+			} else { // Xét trường hợp cả D1, D2, D đều bằng 0 thì hệ phương trình vô số nghiệm
+				JOptionPane.showMessageDialog(null,
+	                    "Hệ phương trình vô số nghiệm !!", // In ra thông báo vô số nghiệm
+	                    "title", JOptionPane.INFORMATION_MESSAGE);	
+			}
 		}
-
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	// Chương trình giải phương trình bậc 2 1 ẩn
+	public static void solve2DegreeEquation(String[] args) {
+		// Khai báo các chuỗi để lưu trữ giá trị của các hệ số của phương trình ax^2 + bx + c =0
+		String strA; 
+		String strB;
+		String strC;
+		
+		// Nhập vào hệ số cho phương trình bậc 2
+		strA = JOptionPane.showInputDialog(null, "Please input a: ", "a: ",
+				JOptionPane.INFORMATION_MESSAGE);
+		
+		strB = JOptionPane.showInputDialog(null, "Please input b: ", "b: ",
+				JOptionPane.INFORMATION_MESSAGE);
+		
+		strC = JOptionPane.showInputDialog(null, "Please input c: ", "c: ",
+				JOptionPane.INFORMATION_MESSAGE);
+		
+		// Chuyển các hệ số về dạng số thực
+		double a = Double.parseDouble(strA);
+		double b = Double.parseDouble(strB);
+		double c = Double.parseDouble(strC);
+
+		// Tính định thức delta 
+		double delta = b*b - 4 * a * c;
+		
+        if (delta < 0) {
+			JOptionPane.showMessageDialog(null,
+                    "Phương trình trên vô nghiệm !!", // In ra thông báo vô nghiệm
+                    "title", JOptionPane.INFORMATION_MESSAGE);
+        } else if (delta == 0) {
+			JOptionPane.showMessageDialog(null,
+                    "Phương trình trên có nghiệm kép là : x1 = x2 = " + (-b/(2*a)), // In ra thông báo vô nghiệm
+                    "title", JOptionPane.INFORMATION_MESSAGE);
+        } else {
+			JOptionPane.showMessageDialog(null,
+                    "Phương trình trên có 2 nghiệm phân biệt là : x1 = " + ((-b + Math.sqrt(a))/(2*a)) + "  và x2 = " + ((-b - Math.sqrt(a))/(2*a)), // In ra thông báo vô nghiệm
+                    "title", JOptionPane.INFORMATION_MESSAGE);
+        }
+	}
 }

@@ -3,6 +3,7 @@
 //Vi du 1
 //Text-printing program
 //Chương trình in ra chuỗi kí tự
+
 public class HelloWorld {
 	
 	public static void main(String args[]) {
