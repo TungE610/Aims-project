@@ -13,10 +13,10 @@ public class Ex_2_2_5 {
 		String strNum2; // Khai báo chuỗi để lưu số thứ 2
 		double sum, difference, product, quotient;	// Khai báo các biến lưu trữ tổng, hiệu, tích, thương
 		
-		strNum1 = JOptionPane.showInputDialog(null, "Please input the first number: ", "Input the first number",
+		strNum1 = JOptionPane.showInputDialog(null, "Nhập vào số thức nhất: ", "Nhập vào số thức nhất",
 				JOptionPane.INFORMATION_MESSAGE); // Nhập vào số thứ nhất dưới dạng string
 		
-		strNum2 = JOptionPane.showInputDialog(null, "Please input the second number: ", "Input the second number",
+		strNum2 = JOptionPane.showInputDialog(null, "Nhập vào số thứ hai: ", "Nhập vào số thứ hai",
 				JOptionPane.INFORMATION_MESSAGE); // Nhập vào số thứ hai dưới dạng string
 				
 		double num1 = Double.parseDouble(strNum1); // Chuyển số thứ nhất sang dạng số thực
