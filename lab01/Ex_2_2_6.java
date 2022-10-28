@@ -17,10 +17,10 @@ public class Ex_2_2_6 {
 		String strA; // Khai báo chuỗi để lưu hệ số bậc 1
 		String strB; // Khai báo chuỗi để lưu hệ số bậc 0
 		
-		strA = JOptionPane.showInputDialog(null, "Nhập hệ số bậc 1 ", "Hãy nhập hệ số bậc 1",
+		strA = JOptionPane.showInputDialog(null, "Bùi Danh Tùng - 20200568 - Nhập hệ số bậc 1 ", "Bùi Danh Tùng - 20200568 - Hãy nhập hệ số bậc 1",
 				JOptionPane.INFORMATION_MESSAGE); // Nhập vào hệ số bậc 1 dưới dạng string
 		
-		strB = JOptionPane.showInputDialog(null, "Nhập hệ số tự do: ", "Hãy nhập hệ số tự do",
+		strB = JOptionPane.showInputDialog(null, "Bùi Danh Tùng - 20200568 - Nhập hệ số tự do: ", "Bùi Danh Tùng - 20200568 - Hãy nhập hệ số tự do",
 				JOptionPane.INFORMATION_MESSAGE); // Nhập vào hệ số bậc 0 dưới dạng string
 		
 		double a = Double.parseDouble(strA); // Chuyển hệ số bậc 1 về dạng số thực
@@ -28,14 +28,14 @@ public class Ex_2_2_6 {
 		
 		if (a == 0) { // Xét trường hợp hệ số bậc 1 của phương trình bậc nhất 1 ẩn bằng 0
 			if (b == 0) { // Xét trường hợp cả hệ số bậc 1 và 0 đều bằng 0 thì phương trình có vô số nghiệm
-				JOptionPane.showMessageDialog(null,"Phương trình trên có vô số nghiệm !!");
+				JOptionPane.showMessageDialog(null,"Bùi Danh Tùng - 20200568 - Phương trình trên có vô số nghiệm !!");
 			} else { // Xét trường hợp hệ số bậc 0 khác 0 thì phương trình vô nghiệm
-				JOptionPane.showMessageDialog(null,"Phương trình vô nghiệm");
+				JOptionPane.showMessageDialog(null,"Bùi Danh Tùng - 20200568 - Phương trình vô nghiệm");
 			}
 		} else { // Xét trường hợp hệ số bậc 1 của phương trình bậc nhất 1 ẩn khác 0
 			JOptionPane.showMessageDialog(null,
-                    "Phương trình trên có nghiệm là : x = " + (-b/a), // In ra nghiệm của phương trình
-                    "Nghiệm", JOptionPane.INFORMATION_MESSAGE);
+                    "Bùi Danh Tùng - 20200568 - Phương trình trên có nghiệm là : x = " + (-b/a), // In ra nghiệm của phương trình
+                    "Bùi Danh Tùng - 20200568 - Phương trình trên có nghiệm", JOptionPane.INFORMATION_MESSAGE);
 		}
 	}
 	// Chương trình giải hệ phương trình bậc nhất 2 ẩn
@@ -49,23 +49,23 @@ public class Ex_2_2_6 {
 		String strA22;
 		String strB2;
 		// Nhập vào hệ số cho phương trình thứ nhất
-		strA11 = JOptionPane.showInputDialog(null, "Nhập vào a11: ", "a11 ",
+		strA11 = JOptionPane.showInputDialog(null, "Bùi Danh Tùng - 20200568 - Nhập vào a11: ", "Bùi Danh Tùng - 20200568 - Nhập vào a11",
 				JOptionPane.INFORMATION_MESSAGE);
 		
-		strA12 = JOptionPane.showInputDialog(null, "nhập vào a12: ", "a12 ",
+		strA12 = JOptionPane.showInputDialog(null, "Bùi Danh Tùng - 20200568 - nhập vào a12: ", "Bùi Danh Tùng - 20200568 - nhập vào a12",
 				JOptionPane.INFORMATION_MESSAGE);
 		
-		strB1 = JOptionPane.showInputDialog(null, "Nhập vào b1: ", "b1 ",
+		strB1 = JOptionPane.showInputDialog(null, "Bùi Danh Tùng - 20200568 - Nhập vào b1: ", "Bùi Danh Tùng - 20200568 - Nhập vào b1",
 				JOptionPane.INFORMATION_MESSAGE);
 		
 		// Nhập vào hệ số cho phương trình thứ hai
-		strA21 = JOptionPane.showInputDialog(null, "Nhập vào a21: ", "a21 ",
+		strA21 = JOptionPane.showInputDialog(null, "Bùi Danh Tùng - 20200568 - Nhập vào a21: ", "Bùi Danh Tùng - 20200568 - Nhập vào a21",
 				JOptionPane.INFORMATION_MESSAGE);
 		
-		strA22 = JOptionPane.showInputDialog(null, "Nhập voà a22: ", "a22 ",
+		strA22 = JOptionPane.showInputDialog(null, "Bùi Danh Tùng - 20200568 - Nhập voà a22: ", "Bùi Danh Tùng - 20200568 - Nhập voà a22",
 				JOptionPane.INFORMATION_MESSAGE);
 		
-		strB2 = JOptionPane.showInputDialog(null, "Nhập vào b2: ", "b2 ",
+		strB2 = JOptionPane.showInputDialog(null, "Bùi Danh Tùng - 20200568 - Nhập vào b2: ", "Bùi Danh Tùng - 20200568 - Nhập vào b2",
 				JOptionPane.INFORMATION_MESSAGE);
 		
 		// Chuyển các hệ số về dạng số thực
@@ -82,18 +82,18 @@ public class Ex_2_2_6 {
 		
 		if (D != 0) { // Xét trường hợp định thức D khác 0 thì hệ phương trình có 1 nghiệm duy nhất 
 			JOptionPane.showMessageDialog(null,	// In ra nghiệm của hệ phương trình
-                    "Hệ phương trình có 2 nghiệm là: x1 = " + D1/D + " và x2 = " + D2/D ,
-                    "Nghiệm", JOptionPane.INFORMATION_MESSAGE);		
+                    "Bùi Danh Tùng - 20200568 - Hệ phương trình có 2 nghiệm là: x1 = " + D1/D + " và x2 = " + D2/D ,
+                    "Bùi Danh Tùng - 20200568 - Hệ phương trình có 2 nghiệm", JOptionPane.INFORMATION_MESSAGE);		
 			}
 		else { // Xét trường hợp D = 0 thì có hai trường hợp : hpt vô nghiệm hoặc vô số nghiệm
 			if (D1 != 0 || D2 != 0) { // Xét trường hợp có ít nhất 1 trong 2 định thức D1, D2 khác 0 thì hệ phương trình vô nghiệm
 				JOptionPane.showMessageDialog(null,
-	                    "Hệ phương trình vô nghiệm !!",	// In ra thông báo vô nghiệm
-	                    "Nghiệm", JOptionPane.INFORMATION_MESSAGE);	
+	                    "Bùi Danh Tùng - 20200568 - Hệ phương trình vô nghiệm !!",	// In ra thông báo vô nghiệm
+	                    "Bùi Danh Tùng - 20200568 - Hệ phương trình vô nghiệm", JOptionPane.INFORMATION_MESSAGE);	
 			} else { // Xét trường hợp cả D1, D2, D đều bằng 0 thì hệ phương trình vô số nghiệm
 				JOptionPane.showMessageDialog(null,
-	                    "Hệ phương trình vô số nghiệm !!", // In ra thông báo vô số nghiệm
-	                    "Nghiệm", JOptionPane.INFORMATION_MESSAGE);	
+	                    "Bùi Danh Tùng - 20200568 - Hệ phương trình vô số nghiệm !!", // In ra thông báo vô số nghiệm
+	                    "Bùi Danh Tùng - 20200568 - Hệ phương trình vô số nghiệm", JOptionPane.INFORMATION_MESSAGE);	
 			}
 		}
 	}
@@ -105,13 +105,13 @@ public class Ex_2_2_6 {
 		String strC;
 		
 		// Nhập vào hệ số cho phương trình bậc 2
-		strA = JOptionPane.showInputDialog(null, "Please input a: ", "a ",
+		strA = JOptionPane.showInputDialog(null, "Bùi Danh Tùng - 20200568 - Hãy nhập a: ", "Bùi Danh Tùng - 20200568 - Hãy nhập a",
 				JOptionPane.INFORMATION_MESSAGE);
 		
-		strB = JOptionPane.showInputDialog(null, "Please input b: ", "b ",
+		strB = JOptionPane.showInputDialog(null, "Bùi Danh Tùng - 20200568 - Hãy nhập b: ", "Bùi Danh Tùng - 20200568 - Hãy nhập b",
 				JOptionPane.INFORMATION_MESSAGE);
 		
-		strC = JOptionPane.showInputDialog(null, "Please input c: ", "c ",
+		strC = JOptionPane.showInputDialog(null, "Bùi Danh Tùng - 20200568 - Hãy nhập c: ", "Bùi Danh Tùng - 20200568 - Hãy nhập c",
 				JOptionPane.INFORMATION_MESSAGE);
 		
 		// Chuyển các hệ số về dạng số thực
@@ -124,16 +124,16 @@ public class Ex_2_2_6 {
 		
         if (delta < 0) { // Xét trường hợp định thức delta < 0 thì phương trình vô nghiệm
 			JOptionPane.showMessageDialog(null,
-                    "Phương trình trên vô nghiệm !!", // In ra thông báo vô nghiệm
-                    "title", JOptionPane.INFORMATION_MESSAGE);
+                    "Bùi Danh Tùng - 20200568 - Phương trình trên vô nghiệm !!", // In ra thông báo vô nghiệm
+                    "Bùi Danh Tùng - 20200568 - Phương trình trên vô nghiệm", JOptionPane.INFORMATION_MESSAGE);
         } else if (delta == 0) { // Xét trường hợp định thức delta = 0 thì phương trình có nghiệm kép
 			JOptionPane.showMessageDialog(null,
-                    "Phương trình trên có nghiệm kép là : x1 = x2 = " + (-b/(2*a)), // In ra thông báo có nghiệm kép
-                    "title", JOptionPane.INFORMATION_MESSAGE);
+                    "Bùi Danh Tùng - 20200568 - Phương trình trên có nghiệm kép là : x1 = x2 = " + (-b/(2*a)), // In ra thông báo có nghiệm kép
+                    "Bùi Danh Tùng - 20200568 - Phương trình trên có nghiệm kép", JOptionPane.INFORMATION_MESSAGE);
         } else { // Xét trường hợp định thức delta > 0 thì phương trình có 2 nghiệm phân biệt
 			JOptionPane.showMessageDialog(null,
-                    "Phương trình trên có 2 nghiệm phân biệt là : x1 = " + ((-b + Math.sqrt(a))/(2*a)) + "  và x2 = " + ((-b - Math.sqrt(a))/(2*a)), // In ra thông báo vô nghiệm
-                    "title", JOptionPane.INFORMATION_MESSAGE);
+                    "Bùi Danh Tùng - 20200568 - Phương trình trên có 2 nghiệm phân biệt là : x1 = " + ((-b + Math.sqrt(a))/(2*a)) + "  và x2 = " + ((-b - Math.sqrt(a))/(2*a)), // In ra thông báo vô nghiệm
+                    "Bùi Danh Tùng - 20200568 - Phương trình trên có 2 nghiệm phân biệt", JOptionPane.INFORMATION_MESSAGE);
         }
 	}
 	// Chương trình menu chính
@@ -147,7 +147,7 @@ public class Ex_2_2_6 {
          * Nếu luachon == 3 Giải phương trình bậc 2
          * nếu luachon == 4 Thoát
          */
-        String menu = " Chọn 1 số để tiếp tục chương trình :\n";
+        String menu = "Bùi Danh Tùng - 20200568 - Chọn 1 số để tiếp tục chương trình :\n";
         menu += "1. Giải phương trình bậc 1\n";
         menu += "2. Giải hệ phương trình bậc 1\n";
         menu += "3. Giải phương trình bậc 2\n";
@@ -156,7 +156,7 @@ public class Ex_2_2_6 {
         // Thực hiện lặp lại việc duyệt chương trình cho đến khi exit
         do {
         	strChoose = JOptionPane.showInputDialog(null, "Bui Danh Tung 20200568",
-                    "Chọn bài toán để giải :",
+                    "Bùi Danh Tùng - 20200568 - Chọn bài toán để giải :",
                     JOptionPane.INFORMATION_MESSAGE);
             // Chuyen lua chọn sang dạng số nguyên
             luachon = Integer.parseInt(strChoose);
