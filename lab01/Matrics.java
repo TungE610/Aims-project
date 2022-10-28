@@ -38,7 +38,7 @@ public class Matrics {
                 
             }
         }
-
+        System.out.print("Kết quả của phép cộng ma trận là:  "); 
         // Cộng lần lượt từng vị trí của 2 ma trận và in ra các giá trị vừa nhận được
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
