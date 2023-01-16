@@ -1,5 +1,10 @@
+// Ho va ten : Bui Danh Tung
+// MSSV : 20200568
+
 package lab02;
+
 public class Aims {
+	
 	public static void main(String[] args) {
 		
 		// create a new cart
